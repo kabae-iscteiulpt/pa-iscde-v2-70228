@@ -81,13 +81,17 @@ public class TaskListView implements PidescoView {
 
 		for (IExtension e : extensions) {
 			IConfigurationElement[] confElements = e.getConfigurationElements();
-			
+
 			for (IConfigurationElement c : confElements) {
 				String s = c.getAttribute("name");
 				try {
-					
+
 					Object o = c.createExecutableExtension("class");
-					
+
+					if (o instanceof TaskListView) {
+
+					}
+
 				} catch (CoreException e1) {
 					e1.printStackTrace();
 				}

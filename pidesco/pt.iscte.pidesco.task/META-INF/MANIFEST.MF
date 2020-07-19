@@ -11,3 +11,4 @@ Bundle-RequiredExecutionEnvironment: JavaSE-1.8
 Automatic-Module-Name: pt.iscte.pidesco.task
 Bundle-ActivationPolicy: lazy
 Import-Package: pt.iscte.pidesco.javaeditor.service
+Export-Package: pt.iscte.pidesco.extensibility
