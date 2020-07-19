@@ -1,23 +1,16 @@
 package pt.iscte.pidesco.entity;
 
 public class Task {
-	// private String check;
-	// private Priority priority;
+
+	private String priority;
 	private String description;
 	private String resource;
 	private String path;
 	private String location;
 
-	/**
-	 * @param check
-	 * @param priority
-	 * @param description
-	 * @param resource
-	 * @param path
-	 * @param location
-	 */
-	public Task(String description, String resource, String path, String location) {
+	public Task(String description, String priority, String resource, String path, String location) {
 		this.setDescription(description);
+		this.setPriority(priority);
 		this.setResource(resource);
 		this.setPath(path);
 		this.setLocation(location);
@@ -25,6 +18,15 @@ public class Task {
 	}
 
 	public Task(String description) {
+		this.description = description;
+
+	}
+
+	public Task(String description, String resource, String path, String location) {
+		this.setDescription(description);
+		this.setResource(resource);
+		this.setPath(path);
+		this.setLocation(location);
 
 	}
 
@@ -69,10 +71,18 @@ public class Task {
 		this.location = location;
 	}
 
-	/*
-	 * public Priority getPriority() { return priority; }
-	 * 
-	 * public void setPriority(Priority priority) { this.priority = priority; }
-	 */
+	public String getPriority() {
+		return priority;
+	}
+
+	public void setPriority(String priority) {
+		this.priority = priority;
+	}
+
+	@Override
+	public String toString() {
+		return "Task [priority=" + priority + ", description=" + description + ", resource=" + resource + ", path="
+				+ path + ", location=" + location + "]";
+	}
 
 }

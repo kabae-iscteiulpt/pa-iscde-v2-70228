@@ -12,7 +12,7 @@ public class Pessoa{
 		this.setAge(age);
 	}
 	
-	
+	//TODO high alter this getter.
 	public int getNif_(){
 		return this.nif_;
 	}
@@ -22,8 +22,8 @@ public class Pessoa{
 		this.nif_=nif_;
 	}
 	
+	//TODO change the name of the method below.
 	public String getName(){
-	//TODO estudar SWT	
 		return this.name;
 	}
 	
@@ -31,13 +31,9 @@ public class Pessoa{
 		this.age=age;
 	}
 	
-	
+	//TODO HIGH cenas
 	public void setName(String name){
 		
 		this.name = name;
 	}
-	
-	
-	
-	
 }

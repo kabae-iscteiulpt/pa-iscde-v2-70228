@@ -5,18 +5,23 @@ import java.io.FileNotFoundException;
 import java.util.HashMap;
 import java.util.Scanner;
 
+import pt.iscte.pidesco.entity.Priority;
 import pt.iscte.pidesco.entity.Task;
-import pt.iscte.pidesco.extensibility.TaskServices;
 
-public class TaskEngine implements TaskServices {
+public class TaskEngine {
 
 	private final static String TODOWORD = "//TODO";
 
 	private HashMap<String, Task> listOfTasks;
+	private String rootOfFiles;
 
-	@Override
-	public HashMap<String, Task> getListOfTasks(String pathOfRuntimeWorkSpace) {
+	public TaskEngine(String rootOfFiles) {
+		this.setRootOfFiles(rootOfFiles);
+	}
 
+	@SuppressWarnings("resource")
+	public HashMap<String, Task> getListOfTasks() {
+		String pathOfRuntimeWorkSpace = rootOfFiles;
 		File folderOfRunTime = new File(pathOfRuntimeWorkSpace);
 
 		listOfTasks = new HashMap<>();
@@ -30,52 +35,52 @@ public class TaskEngine implements TaskServices {
 
 				try {
 					Scanner in = new Scanner(file);
-
+					Task task = null;
 					while (in.hasNextLine()) {
 
 						String line = in.nextLine();
-						// System.out.println(line);
 
 						String[] vector = line.split(" ");
 
 						String specialWord = vector[0].trim();
 
 						if (specialWord.equals(TODOWORD)) {
-
+							String priority = vector[1].trim();
 							String resource = file.getName();
 							String path = file.getPath();
-							String locationS = location + "";
+							String locationS = "line " + location + "";
 
-							Task task;
+							for (Priority e : Priority.values()) {
+								String prior = e + "";
 
-							System.out.println(resource);
-							System.out.println(line);
-							System.out.println(path);
-							System.out.println(locationS);
+								if (priority != null & prior.equalsIgnoreCase(priority)) {
+									String description = "";
+									for (int i = 2; i < vector.length; i++) {
+										description = description + vector[i] + " ";
+									}
 
-							System.out.println("###################");
+									task = new Task(description, prior, resource, path, locationS);
 
-							task = new Task(line, resource, path, locationS);
-							/*
-							 * if (vector[1].equalsIgnoreCase("LOW")) {
-							 * 
-							 * } else if (vector[1].equalsIgnoreCase("MEDIUM")) {
-							 * 
-							 * } else {
-							 * 
-							 * }
-							 */
+									String chave = path + locationS;
+									listOfTasks.put(chave, task);
+									break;
+								} else {
 
-							String chave = path + locationS;
+									String description = " ";
+									for (int i = 1; i < vector.length; i++) {
+										description = description + vector[i] + " ";
+									}
+									task = new Task(description, resource, path, locationS);
+									String chave = path + locationS;
+									listOfTasks.put(chave, task);
+								}
 
-							listOfTasks.put(chave, task);
-
+							}
 						}
 						location++;
 					}
 
 				} catch (FileNotFoundException e) {
-					// TODO Auto-generated catch block
 					e.printStackTrace();
 				}
 			}
@@ -85,12 +90,26 @@ public class TaskEngine implements TaskServices {
 
 	}
 
+	public String getRootOfFiles() {
+		return rootOfFiles;
+	}
+
+	public void setRootOfFiles(String rootOfFiles) {
+		this.rootOfFiles = rootOfFiles;
+	}
+
+	
+	//remove the method below.
 	public static void main(String[] args) {
 
-		TaskEngine task = new TaskEngine();
-		task.getListOfTasks(
-				"C:\\\\Users\\\\KWAN\\\\Desktop\\\\METI\\\\1Semestre\\\\Programação Avançada\\\\Projeto\\\\Project_ pa-iscde\\\\runtime-ISCDE");
+		TaskEngine t = new TaskEngine("C:\\Users\\KWAN\\Desktop\\METI\\1Semestre\\Pa_Project\\runtime-ISCDE");
+		HashMap<String, Task> task = t.getListOfTasks();
+		int c = 1;
+		for (String n : task.keySet()) {
 
+			System.out.println(c + " " + task.get(n).toString());
+			c++;
+		}
 	}
 
 }
