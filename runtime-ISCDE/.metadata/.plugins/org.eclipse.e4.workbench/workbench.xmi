@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="ASCII"?>
 <application:Application xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:advanced="http://www.eclipse.org/ui/2010/UIModel/application/ui/advanced" xmlns:application="http://www.eclipse.org/ui/2010/UIModel/application" xmlns:basic="http://www.eclipse.org/ui/2010/UIModel/application/ui/basic" xmlns:menu="http://www.eclipse.org/ui/2010/UIModel/application/ui/menu" xmi:id="_ZEZpAMO-Eeqr_ar3iiu0hA" elementId="org.eclipse.e4.legacy.ide.application" contributorURI="platform:/plugin/org.eclipse.platform" selectedElement="_ZEZpAcO-Eeqr_ar3iiu0hA" bindingContexts="_ZEZp4cO-Eeqr_ar3iiu0hA">
-  <persistedState key="memento" value="&lt;?xml version=&quot;1.0&quot; encoding=&quot;UTF-8&quot;?>&#xD;&#xA;&lt;workbench>&#xD;&#xA;&lt;mruList>&#xD;&#xA;&lt;file factoryID=&quot;org.eclipse.ui.ide.FileStoreEditorInputFactory&quot; id=&quot;pt.iscte.pidesco.javaeditor&quot; name=&quot;PackageFocusFilter.java&quot; tooltip=&quot;C:\Users\KWAN\Desktop\METI\1Semestre\Pa_Project\runtime-ISCDE\PackageFocusFilter.java&quot;>&#xD;&#xA;&lt;persistable uri=&quot;file:/C:/Users/KWAN/Desktop/METI/1Semestre/Pa_Project/runtime-ISCDE/PackageFocusFilter.java&quot;/>&#xD;&#xA;&lt;/file>&#xD;&#xA;&lt;file factoryID=&quot;org.eclipse.ui.ide.FileStoreEditorInputFactory&quot; id=&quot;pt.iscte.pidesco.javaeditor&quot; name=&quot;FirstClass.java&quot; tooltip=&quot;C:\Users\KWAN\Desktop\METI\1Semestre\Pa_Project\runtime-ISCDE\FirstClass.java&quot;>&#xD;&#xA;&lt;persistable uri=&quot;file:/C:/Users/KWAN/Desktop/METI/1Semestre/Pa_Project/runtime-ISCDE/FirstClass.java&quot;/>&#xD;&#xA;&lt;/file>&#xD;&#xA;&lt;/mruList>&#xD;&#xA;&lt;/workbench>"/>
+  <persistedState key="memento" value="&lt;?xml version=&quot;1.0&quot; encoding=&quot;UTF-8&quot;?>&#xD;&#xA;&lt;workbench>&#xD;&#xA;&lt;mruList>&#xD;&#xA;&lt;file factoryID=&quot;org.eclipse.ui.ide.FileStoreEditorInputFactory&quot; id=&quot;pt.iscte.pidesco.javaeditor&quot; name=&quot;PackageFocusTool.java&quot; tooltip=&quot;C:\Users\KWAN\Desktop\METI\1Semestre\Pa_Project\runtime-ISCDE\PackageFocusTool.java&quot;>&#xD;&#xA;&lt;persistable uri=&quot;file:/C:/Users/KWAN/Desktop/METI/1Semestre/Pa_Project/runtime-ISCDE/PackageFocusTool.java&quot;/>&#xD;&#xA;&lt;/file>&#xD;&#xA;&lt;file factoryID=&quot;org.eclipse.ui.ide.FileStoreEditorInputFactory&quot; id=&quot;pt.iscte.pidesco.javaeditor&quot; name=&quot;PackageFocusFilter.java&quot; tooltip=&quot;C:\Users\KWAN\Desktop\METI\1Semestre\Pa_Project\runtime-ISCDE\PackageFocusFilter.java&quot;>&#xD;&#xA;&lt;persistable uri=&quot;file:/C:/Users/KWAN/Desktop/METI/1Semestre/Pa_Project/runtime-ISCDE/PackageFocusFilter.java&quot;/>&#xD;&#xA;&lt;/file>&#xD;&#xA;&lt;file factoryID=&quot;org.eclipse.ui.ide.FileStoreEditorInputFactory&quot; id=&quot;pt.iscte.pidesco.javaeditor&quot; name=&quot;FirstClass.java&quot; tooltip=&quot;C:\Users\KWAN\Desktop\METI\1Semestre\Pa_Project\runtime-ISCDE\FirstClass.java&quot;>&#xD;&#xA;&lt;persistable uri=&quot;file:/C:/Users/KWAN/Desktop/METI/1Semestre/Pa_Project/runtime-ISCDE/FirstClass.java&quot;/>&#xD;&#xA;&lt;/file>&#xD;&#xA;&lt;/mruList>&#xD;&#xA;&lt;/workbench>"/>
   <tags>activeSchemeId:org.eclipse.ui.defaultAcceleratorConfiguration</tags>
   <tags>ModelMigrationProcessor.001</tags>
   <children xsi:type="basic:TrimmedWindow" xmi:id="_ZEZpAcO-Eeqr_ar3iiu0hA" elementId="IDEWindow" contributorURI="platform:/plugin/org.eclipse.platform" selectedElement="_ZEZpAsO-Eeqr_ar3iiu0hA" label="%trimmedwindow.label.eclipseSDK" x="1790" y="-327" width="1024" height="538">
@@ -65,11 +65,12 @@
                 </children>
               </children>
             </children>
-            <children xsi:type="basic:PartSashContainer" xmi:id="_ZEZpDsO-Eeqr_ar3iiu0hA" containerData="7400" selectedElement="_ZEZpD8O-Eeqr_ar3iiu0hA" horizontal="true">
-              <children xsi:type="advanced:Placeholder" xmi:id="_ZEZpD8O-Eeqr_ar3iiu0hA" elementId="org.eclipse.ui.editorss" containerData="4619" ref="_ZEZpH8O-Eeqr_ar3iiu0hA"/>
-              <children xsi:type="basic:PartStack" xmi:id="_ZEZpEMO-Eeqr_ar3iiu0hA" elementId="bottomRight" containerData="5381" selectedElement="_ZEZpE8O-Eeqr_ar3iiu0hA">
+            <children xsi:type="basic:PartSashContainer" xmi:id="_ZEZpDsO-Eeqr_ar3iiu0hA" containerData="7400" selectedElement="_ZEZpEMO-Eeqr_ar3iiu0hA" horizontal="true">
+              <children xsi:type="advanced:Placeholder" xmi:id="_ZEZpD8O-Eeqr_ar3iiu0hA" elementId="org.eclipse.ui.editorss" containerData="3785" ref="_ZEZpH8O-Eeqr_ar3iiu0hA"/>
+              <children xsi:type="basic:PartStack" xmi:id="_ZEZpEMO-Eeqr_ar3iiu0hA" elementId="bottomRight" containerData="6215" selectedElement="_ZEZpE8O-Eeqr_ar3iiu0hA">
                 <tags>org.eclipse.e4.secondaryDataStack</tags>
                 <tags>Other</tags>
+                <tags>active</tags>
                 <children xsi:type="advanced:Placeholder" xmi:id="_ZEZpEcO-Eeqr_ar3iiu0hA" elementId="org.eclipse.ui.views.TaskList" toBeRendered="false" ref="_ZEZpLcO-Eeqr_ar3iiu0hA" closeable="true">
                   <tags>View</tags>
                   <tags>categoryTag:General</tags>
@@ -130,23 +131,20 @@
       <tags>categoryTag:General</tags>
     </sharedElements>
     <sharedElements xsi:type="advanced:Area" xmi:id="_ZEZpH8O-Eeqr_ar3iiu0hA" elementId="org.eclipse.ui.editorss" selectedElement="_ZEZpIMO-Eeqr_ar3iiu0hA">
-      <children xsi:type="basic:PartStack" xmi:id="_ZEZpIMO-Eeqr_ar3iiu0hA" elementId="org.eclipse.e4.primaryDataStack" selectedElement="_VRPZEMPBEeqr25W4iktDpw">
+      <children xsi:type="basic:PartStack" xmi:id="_ZEZpIMO-Eeqr_ar3iiu0hA" elementId="org.eclipse.e4.primaryDataStack" selectedElement="_ZEZpIcO-Eeqr_ar3iiu0hA">
         <tags>org.eclipse.e4.primaryDataStack</tags>
         <tags>EditorStack</tags>
-        <tags>active</tags>
         <children xsi:type="basic:Part" xmi:id="_ZEZpIcO-Eeqr_ar3iiu0hA" elementId="org.eclipse.e4.ui.compatibility.editor" contributionURI="bundleclass://org.eclipse.ui.workbench/org.eclipse.ui.internal.e4.compatibility.CompatibilityEditor" label="FirstClass.java" iconURI="platform:/plugin/pt.iscte.pidesco.javaeditor/images/javafile.gif" closeable="true">
           <persistedState key="memento" value="&lt;?xml version=&quot;1.0&quot; encoding=&quot;UTF-8&quot;?>&#xD;&#xA;&lt;editor id=&quot;pt.iscte.pidesco.javaeditor&quot; name=&quot;FirstClass.java&quot; partName=&quot;FirstClass.java&quot; title=&quot;FirstClass.java&quot; tooltip=&quot;C:\Users\KWAN\Desktop\METI\1Semestre\Pa_Project\runtime-ISCDE\FirstClass.java&quot;>&#xD;&#xA;&lt;input factoryID=&quot;org.eclipse.ui.ide.FileStoreEditorInputFactory&quot; uri=&quot;file:/C:/Users/KWAN/Desktop/METI/1Semestre/Pa_Project/runtime-ISCDE/FirstClass.java&quot;/>&#xD;&#xA;&lt;editorState selectionHorizontalPixel=&quot;0&quot; selectionLength=&quot;0&quot; selectionOffset=&quot;546&quot; selectionTopPixel=&quot;0&quot;/>&#xD;&#xA;&lt;/editor>"/>
           <tags>Editor</tags>
           <tags>removeOnHide</tags>
           <tags>pt.iscte.pidesco.javaeditor</tags>
         </children>
-        <children xsi:type="basic:Part" xmi:id="_VRPZEMPBEeqr25W4iktDpw" elementId="org.eclipse.e4.ui.compatibility.editor" contributionURI="bundleclass://org.eclipse.ui.workbench/org.eclipse.ui.internal.e4.compatibility.CompatibilityEditor" label="PackageFocusFilter.java" iconURI="platform:/plugin/pt.iscte.pidesco.javaeditor/images/javafile.gif" closeable="true">
-          <persistedState key="memento" value="&lt;?xml version=&quot;1.0&quot; encoding=&quot;UTF-8&quot;?>&#xD;&#xA;&lt;editor id=&quot;pt.iscte.pidesco.javaeditor&quot; name=&quot;PackageFocusFilter.java&quot; partName=&quot;PackageFocusFilter.java&quot; title=&quot;PackageFocusFilter.java&quot; tooltip=&quot;C:\Users\KWAN\Desktop\METI\1Semestre\Pa_Project\runtime-ISCDE\PackageFocusFilter.java&quot;>&#xD;&#xA;&lt;input factoryID=&quot;org.eclipse.ui.ide.FileStoreEditorInputFactory&quot; uri=&quot;file:/C:/Users/KWAN/Desktop/METI/1Semestre/Pa_Project/runtime-ISCDE/PackageFocusFilter.java&quot;/>&#xD;&#xA;&lt;editorState selectionHorizontalPixel=&quot;0&quot; selectionLength=&quot;0&quot; selectionOffset=&quot;843&quot; selectionTopPixel=&quot;212&quot;/>&#xD;&#xA;&lt;/editor>"/>
+        <children xsi:type="basic:Part" xmi:id="_MpaJ0MoSEeqmC6hjKw2ttw" elementId="org.eclipse.e4.ui.compatibility.editor" contributionURI="bundleclass://org.eclipse.ui.workbench/org.eclipse.ui.internal.e4.compatibility.CompatibilityEditor" label="PackageFocusTool.java" iconURI="platform:/plugin/pt.iscte.pidesco.javaeditor/images/javafile.gif" closeable="true">
+          <persistedState key="memento" value="&lt;?xml version=&quot;1.0&quot; encoding=&quot;UTF-8&quot;?>&#xD;&#xA;&lt;editor id=&quot;pt.iscte.pidesco.javaeditor&quot; name=&quot;PackageFocusTool.java&quot; partName=&quot;PackageFocusTool.java&quot; title=&quot;PackageFocusTool.java&quot; tooltip=&quot;C:\Users\KWAN\Desktop\METI\1Semestre\Pa_Project\runtime-ISCDE\PackageFocusTool.java&quot;>&#xD;&#xA;&lt;input factoryID=&quot;org.eclipse.ui.ide.FileStoreEditorInputFactory&quot; uri=&quot;file:/C:/Users/KWAN/Desktop/METI/1Semestre/Pa_Project/runtime-ISCDE/PackageFocusTool.java&quot;/>&#xD;&#xA;&lt;editorState selectionHorizontalPixel=&quot;0&quot; selectionLength=&quot;0&quot; selectionOffset=&quot;0&quot; selectionTopPixel=&quot;0&quot;/>&#xD;&#xA;&lt;/editor>"/>
           <tags>Editor</tags>
           <tags>removeOnHide</tags>
           <tags>pt.iscte.pidesco.javaeditor</tags>
-          <tags>active</tags>
-          <tags>activeOnClose</tags>
         </children>
       </children>
     </sharedElements>
@@ -210,6 +208,8 @@
       <persistedState key="memento" value="&lt;?xml version=&quot;1.0&quot; encoding=&quot;UTF-8&quot;?>&#xD;&#xA;&lt;view/>"/>
       <tags>View</tags>
       <tags>categoryTag:Other</tags>
+      <tags>active</tags>
+      <tags>activeOnClose</tags>
       <menus xmi:id="_ZEZpMsO-Eeqr_ar3iiu0hA" elementId="pt.iscte.pidesco.view">
         <tags>ViewMenu</tags>
         <tags>menuContribution:menu</tags>

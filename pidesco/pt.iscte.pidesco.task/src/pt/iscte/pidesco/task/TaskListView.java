@@ -22,18 +22,13 @@ import pt.iscte.pidesco.extensibility.PidescoView;
 public class TaskListView implements PidescoView {
 
 	private static final String extensionPointID = "pt.iscte.pidesco.task.TaskList";
-	private IConfigurationElement[] elements;
-
-	public TaskListView() {
-		// TODO Auto-generated constructor stub
-	}
 
 	@Override
 	public void createContents(Composite viewArea, Map<String, Image> imageMap) {
 
 		// tenho que retirar o caminho em baixo tem ficar uma variavel
 		TaskEngine engine = new TaskEngine("C:\\Users\\KWAN\\Desktop\\METI\\1Semestre\\Pa_Project\\runtime-ISCDE");
-		HashMap<String, Task> taskList = engine.getListOfTasks();
+		HashMap<String, Task> taskList = engine.createTaskListView(engine.getRootOfFiles());
 
 		Table table = new Table(viewArea, SWT.BORDER);
 

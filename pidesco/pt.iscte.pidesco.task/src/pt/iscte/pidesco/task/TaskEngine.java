@@ -7,8 +7,12 @@ import java.util.Scanner;
 
 import pt.iscte.pidesco.entity.Priority;
 import pt.iscte.pidesco.entity.Task;
+import pt.iscte.pidesco.extensibility.TaskListView;
 
-public class TaskEngine {
+/**
+ * The main class responsibly to get all the list of tasks.
+ */
+public class TaskEngine implements TaskListView {
 
 	private final static String TODOWORD = "//TODO";
 
@@ -19,11 +23,15 @@ public class TaskEngine {
 		this.setRootOfFiles(rootOfFiles);
 	}
 
-	@SuppressWarnings("resource")
-	public HashMap<String, Task> getListOfTasks() {
-		String pathOfRuntimeWorkSpace = rootOfFiles;
-		File folderOfRunTime = new File(pathOfRuntimeWorkSpace);
-
+	/**
+	 * Gets the task list view.
+	 * 
+	 * @param pathOfRuntimeWorkSpace should not be a empty name
+	 * @return taskListView
+	 */
+	public HashMap<String, Task> createTaskListView(String pathOfRuntimeWorkSpace) {
+		this.setRootOfFiles(pathOfRuntimeWorkSpace);
+		File folderOfRunTime = new File(rootOfFiles);
 		listOfTasks = new HashMap<>();
 
 		File[] listOfFiles = folderOfRunTime.listFiles();
@@ -34,6 +42,7 @@ public class TaskEngine {
 			if (file.isFile()) {
 
 				try {
+					@SuppressWarnings("resource")
 					Scanner in = new Scanner(file);
 					Task task = null;
 					while (in.hasNextLine()) {
@@ -90,26 +99,22 @@ public class TaskEngine {
 
 	}
 
+	/**
+	 * Gets the rootOfFiles.
+	 * 
+	 * @return rootOfFiles
+	 */
 	public String getRootOfFiles() {
 		return rootOfFiles;
 	}
 
+	/**
+	 * Sets the rootOfFiles.
+	 * 
+	 * @param rootOfFiles
+	 */
 	public void setRootOfFiles(String rootOfFiles) {
 		this.rootOfFiles = rootOfFiles;
-	}
-
-	
-	//remove the method below.
-	public static void main(String[] args) {
-
-		TaskEngine t = new TaskEngine("C:\\Users\\KWAN\\Desktop\\METI\\1Semestre\\Pa_Project\\runtime-ISCDE");
-		HashMap<String, Task> task = t.getListOfTasks();
-		int c = 1;
-		for (String n : task.keySet()) {
-
-			System.out.println(c + " " + task.get(n).toString());
-			c++;
-		}
 	}
 
 }

@@ -1,5 +1,9 @@
 package pt.iscte.pidesco.extensibility;
 
+import java.util.HashMap;
+
+import pt.iscte.pidesco.entity.Task;
+
 public interface TaskListView {
 
 	/**
@@ -8,6 +12,6 @@ public interface TaskListView {
 	 * @param pathOfRuntimeWorkSpace should not be a empty name
 	 * @return taskListView
 	 */
-	void createTaskListView(String pathOfRuntimeWorkSpace);
+	HashMap<String, Task> createTaskListView(String pathOfRuntimeWorkSpace);
 
 }
